@@ -1,26 +1,10 @@
-import logo from '/icons/logo.png';
-import phone from '/icons/phone.png';
-import power from '/icons/power.png';
-import cart from '/icons/cart.png';
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 export default function Header() {
   return (
     <>
-      <header className="bg-cyan-200">
-        <img src={logo} alt="" />
-        <ul className="flex">
-          <li>
-            <img src={phone} alt="" />
-            Phone accessories{' '}
-          </li>
-          <li>
-            <img src={power} alt="" />
-            Power
-          </li>
-          <li>
-            <img src={cart} alt="" />
-            Add to cart
-          </li>
-        </ul>
+      <header className="bg-cyan-200 flex justify-end p-3 items-center relative">
+        <GiHamburgerMenu />
       </header>
     </>
   );
